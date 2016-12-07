@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.0"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
         applicationId "org.butterknife"
         minSdkVersion 14
-        targetSdkVersion 24
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -33,7 +33,8 @@ dependencies {
     })
     //    compile files('libs/processor.jar')
     testCompile 'junit:junit:4.12'
-    compile project(':processor')
+    compile project(':butterknife')
+//    compile 'com.jakewharton:butterknife:7.0.1'
 }
 
 //task processorTask(type: Exec) {
