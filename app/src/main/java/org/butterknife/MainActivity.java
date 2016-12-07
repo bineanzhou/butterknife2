@@ -10,15 +10,18 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends Activity {
 
-    @Bind(R.id.tv)
     TextView mTextView;
+    @Bind(R.id.tv)
+    TextView tv;
+    @Bind(R.id.tv_111)
+    TextView tv111;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        if(mTextView!=null)
+        if (mTextView != null)
             mTextView.setText("test Bind");
     }
 }

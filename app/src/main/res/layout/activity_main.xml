@@ -4,6 +4,8 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -15,9 +17,71 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
     <TextView
         android:id="@+id/tv_111"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="#B0C4DE"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="64dip"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/icon_middle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_middle"
+                android:layout_centerHorizontal="true"
+                android:text="xxxx" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher" />
+    </LinearLayout>
+
 </RelativeLayout>
