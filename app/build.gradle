@@ -33,7 +33,7 @@ dependencies {
     })
     //    compile files('libs/processor.jar')
     testCompile 'junit:junit:4.12'
-    compile project(':butterknife')
+//    compile project(':butterknife')
 //    compile 'com.jakewharton:butterknife:7.0.1'
 }
 
