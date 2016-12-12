@@ -19,6 +19,7 @@
         android:text="Hello World!" />
 
     <TextView
+        android:layout_below="@+id/tv"
         android:id="@+id/tv_111"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -32,8 +32,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     //    compile files('libs/processor.jar')
-    testCompile 'junit:junit:4.12'
-//    compile project(':butterknife')
+//    testCompile 'junit:junit:4.12'
+    compile project(':butterknife')
 //    compile 'com.jakewharton:butterknife:7.0.1'
 }
 
